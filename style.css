@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,8 @@
     padding-right: calc(50% - 600px);
 }
 .head {
+    display: flex;
+    flex-wrap: wrap;
 height: 1000px;
 background-image: linear-gradient(#00000000 0%, #000915), url(fonovoe.png);
 background-size: cover;
@@ -22,6 +25,8 @@ color: #ffffff;
 font-family: "Montserrat";
 }
 .body{
+    width: 480px;
+    height: 64px;
 font-family: "Montserrat";
 font-weight: 400;
 font-size: 18px;
@@ -29,7 +34,17 @@ line-height: 32px;
 letter-spacing: 0px;
 color: #ffffff;
 }
+.body span{
+    font-weight: 700;
+}
+.font{
+    font-weight: 700;
+}
 .link {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
 margin-top: 44px;
 width: 234px;
 height: 48px;
@@ -47,6 +62,7 @@ background-color: #000915;
 }
 .product_content{
 display: flex;
+flex-wrap: wrap;
 gap: 32px  ;
 }
 .product_img {
@@ -66,3 +82,37 @@ gap: 32px  ;
      font-size: 24px; 
      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .head {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .section {
+        text-align: center;
+        padding-top: 238px;
+        font-size: 32px;
+    }
+    .product_img {
+        width: 343px;
+    }
+    .body {
+        display: inline-block;
+    align-items: center;
+    text-align: center;
+    line-height: 22px;
+        font-size: 14px;
+        width: 343px;
+        height: 66px;
+    }
+    .link{
+    margin-top: 32px;
+    margin-left: 70px;
+    }
+    }
