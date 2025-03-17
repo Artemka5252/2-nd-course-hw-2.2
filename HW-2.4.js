@@ -1,25 +1,19 @@
 // lesson 1
 
-let i = 0;
-while (i < 2) {
+for (let i = 0; i < 2; i = i + 1) {
     console.log('Привет');
-    i++;
 }
 
 // lesson 2
 
-let i = 1;
-while (i <= 5) {
+for (i = 1; i <= 5; i = i + 1) {
     console.log(i);
-    i++
 }
 
 // lesson 3
 
-let i = 7;
-while (i <= 22) {
+for (i = 7; i <= 22; i = i + 1) {
     console.log(i);
-    i++
 }
 
 // lesson 4
@@ -51,10 +45,13 @@ console.log(`Количество итераций: ${num}`);
 
 const firstFriday = 7;
 const totalDays = 31;
+let day = firstFriday;
 
-for (let day = firstFriday; day <= totalDays; day += 7) {
+do {
     console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
-}
+    day += 7;
+} while (day <= totalDays);
+
 
 
 
