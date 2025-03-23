@@ -136,7 +136,6 @@ transition: all 0.3s;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 32px;
-    width: 590px;
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 18px;
@@ -175,12 +174,9 @@ transition: all 0.3s;
 }
 
 
-@media (max-width: 767px) {
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+@media (max-width: 767px){
     .head {
+        justify-content: center;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -211,12 +207,16 @@ transition: all 0.3s;
     .link{
     margin-top: 32px;
     }
+    .product_content{
+        justify-content: center;
+    }
     .text_content{
         left: 16px;
     }
     .footer {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
     }
     .footer_head {
         padding-top: 51px;
@@ -226,11 +226,12 @@ flex-wrap: wrap;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+padding-left: 16px;
+padding-right: 16px;
     }
     .footer_product {
 display: flex;
 text-align: center;
-width: 343px;
 flex-wrap: wrap;
 font-size: 14px;
 line-height: 22px;
@@ -242,4 +243,74 @@ line-height: 22px;
     .gamepad_img {
     width: 344px;
     height: 236px;
+}
+}
+@media (min-width: 768px) and (max-width: 833px) {
+   .head {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.section {
+    text-align: center;
+    padding-top: 238px;
+}
+.game_img {
+    width: 343px;
+    height: 280px;
+}
+.body {
+width: 768px;
+display: inline-block;
+align-items: center;
+text-align: center;
+line-height: 22px;
+height: 66px;
+}
+.button{
+    justify-content: center;
+    align-items: center;
+}
+.link{
+margin-top: 32px;
+}
+.product_content{
+    justify-content: center;
+}
+.text_content{
+    left: 16px;
+}
+.footer {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.footer_head {
+    padding-top: 51px;
+}
+.footer_content {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-left: 16px;
+padding-right: 16px;
+}
+.footer_product {
+display: flex;
+text-align: center;
+flex-wrap: wrap;
+line-height: 22px;
+}
+.footer_gamepad {
+padding-top: 64px;
+padding-bottom: 85px;
+}
+}
+@media (max-width: 1024px) {
+    .center{
+        padding-left: calc(50% - 450px);
+        padding-right: calc(50% - 450px);
+        justify-content: center;
+    }
 }
