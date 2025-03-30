@@ -35,26 +35,40 @@ console.log(num);
 // lesson 5
 
 const numbers = [1, 1, 1];
-numbers.push(2, 2, 2);
+for (let i = 0; i < 3; i++) {
+    numbers.push(2)
+}
 console.log(numbers);
 
 // lesson 6
 
-const alse = [9, 8, 7, 'a', 6, 5];
-alse.sort();
-const filteredAlse = alse.filter(alse => typeof alse === 'number');
-console.log(filteredAlse);
+let alse = [9, 8, 7, 'a', 6, 5];
+alse.sort((a, b) => a - b);
+let newAlse = [];
+for (let i = alse.length; i > 0; i--) {
+    let element = alse.pop();
+    if (typeof element === 'number') {
+        newAlse.unshift(element);
+    }
+}
+console.log(newAlse);
 
 // lesson 7
 
-const number = [9, 8, 7, 6, 5];
-
-const user = prompt('угадай число от 9 до 5')
-
-if (number.includes(Number(user))) {
-    alert("угадал");
+const arr = [9, 8, 7, 6, 5];
+const userInput = prompt("Угадайте число от 5 до 9:");
+const userNumber = Number(userInput);
+let isGuessed = false;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === userNumber) {
+        isGuessed = true;
+        break;
+    }
+}
+if (isGuessed) {
+    alert("Угадал");
 } else {
-    alert("не угадал");
+    alert("Не угадал");
 }
 
 // lesson 8
@@ -69,8 +83,11 @@ const number = [
     [1, 2, 3],
     [4, 5, 6]
 ];
-const unification = [...number[0], ...number[1]];
-console.log(unification);
+let flat.Number[];
+for (let i = 0; i = number.length; i++) {
+    flatNumber = flatNumber.concat(number(i));
+};
+console.log(flatNumber);
 
 // lesson 10
 
@@ -94,35 +111,54 @@ console.log(squares);
 
 // lesson 12
 
-function getStringLengths(line) {
-    return line.map(str => str.length);
+function getWordLengths(str) {
+    const words = str.split(" ");
+    return words.map(word => word.length);
 }
-
-const words = ["apple", "banana", "kiwi", "orange"];
-const lengths = getStringLengths(words);
-console.log(lengths);
+const sentence = "apple banana cherry kiwi";
+console.log(getWordLengths(sentence));
 
 // lesson 13
 
-function getNegativeNumbers(numbs) {
-    return numbs.filter(num => num < 0);
+function getNegativeNumbers(arr) {
+    const negativeNumbers = [];
+    for (let i = 0; i < arr.length; i++) {
+        const splitElement = arr[i].toString().split('');
+        if (arr[i] < 0) {
+            negativeNumbers.push(arr[i]);
+        }
+    }
+    return negativeNumbers;
 }
-
 const numbers = [1, -2, 3, -4, 5, -6];
-
-const negativeNumbers = getNegativeNumbers(numbers);
-console.log(negativeNumbers);
+console.log(getNegativeNumbers(numbers));
 
 // lesson 14
 
-const randomNumbers = Array.from({ length: 10 }, () => Math.floor(Math.random() * 11));
-const evenNumbers = randomNumbers.filter(num => num % 2 === 0);
-console.log("Исходный массив:", randomNumbers);
-console.log("Массив с четными числами:", evenNumbers);
+const arr = [];
+for (let i = 0; i < 10; i++) {
+    arr.push(Math.floor(Math.random() * 11));
+}
+const evenNumbers = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+        evenNumbers.push(arr[i]);
+    }
+}
+console.log("Исходный массив:", arr);
+console.log("Массив четных чисел:", evenNumbers);
 
 // lesson 15
 
-const randomNumbers = Array.from({ length: 6 }, () => Math.floor(Math.random() * 10) + 1);
-const average = randomNumbers.reduce((sum, num) => sum + num, 0) / randomNumbers.length;
-console.log("Массив случайных чисел:", randomNumbers);
+const arr = [];
+for (let i = 0; i < 6; i++) {
+    arr.push(Math.floor(Math.random() * 10) + 1);
+}
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+
+const average = sum / arr.length;
+console.log("Массив:", arr);
 console.log("Среднее арифметическое:", average);
