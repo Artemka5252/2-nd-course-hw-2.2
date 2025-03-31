@@ -10,7 +10,6 @@ function parity(num) {
     return num % 2 === 0 ? 'число четное' : 'число нечетное';
 }
 
-
 //lesson 3
 
 function square(num) {
