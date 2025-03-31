@@ -173,6 +173,9 @@ transition: all 0.3s;
     padding-bottom: 233px;
 }
 
+@media (max-width: 767px){
+
+
 
 @media (max-width: 767px){
 =======
@@ -245,6 +248,7 @@ transition: all 0.3s;
         padding-right: 16px;
     }
 
+
     .head {
         justify-content: center;
         background-size: cover;
@@ -286,10 +290,8 @@ transition: all 0.3s;
     .footer {
 display: flex;
 flex-wrap: wrap;
-
 justify-content: center;
-
-
+justify-content: center;
     }
     .footer_head {
         padding-top: 51px;
@@ -299,10 +301,10 @@ justify-content: center;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-
 padding-left: 16px;
 padding-right: 16px;
-
+padding-left: 16px;
+padding-right: 16px;
     }
     .footer_product {
 display: flex;
