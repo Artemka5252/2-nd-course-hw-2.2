@@ -92,34 +92,26 @@ transition: all 0.3s;
 .product:hover {
     transform: scale(1.1);
 }
-.product::after{
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(39, 1, 15, 0), rgba(0, 25, 68, 1) );
-}
-.text_content {
-    z-index: 2;
-    font-family: "montserrat" ;
-    position: absolute;
-    font-weight: 600;
-    top: 236px; 
-    left: 32px; 
-     color: white; 
-     font-size: 24px; 
-     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-.footer {
+.footer_season {
     display: flex;
     background-color: #000915;
 }
-.footer_content {
+.footer_remember_words {
+    display: flex;
+    background-color: #000915;
+    flex-direction: row-reverse;
+}
+.footer_content_season {
     display: flex;
     flex-wrap: wrap;
     height: 235px;
+    padding-right: 125px;
+}
+.footer_content_remember {
+    display: flex;
+    flex-wrap: wrap;
+    height: 235px;
+    padding-left: 135px;
 }
 .footer_head {
     padding-top: 282px;
@@ -173,7 +165,6 @@ transition: all 0.3s;
     padding-bottom: 233px;
 }
 
-
 @media (max-width: 767px){
     .head {
         justify-content: center;
@@ -213,22 +204,34 @@ transition: all 0.3s;
     .text_content{
         left: 16px;
     }
-    .footer {
+    .footer_season {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
     }
+    .footer_remember_words {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+            }
     .footer_head {
         padding-top: 51px;
         font-size: 32px;
     }
-    .footer_content {
+    .footer_content_season {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 padding-left: 16px;
 padding-right: 16px;
     }
+    .footer_content_remember{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+            }
     .footer_product {
 display: flex;
 text-align: center;
@@ -278,24 +281,33 @@ margin-top: 32px;
 .product_content{
     justify-content: center;
 }
-.text_content{
-    left: 16px;
-}
-.footer {
+.footer_season {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
+.footer_remember_words {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 .footer_head {
     padding-top: 51px;
 }
-.footer_content {
+.footer_content_season {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 padding-left: 16px;
 padding-right: 16px;
 }
+.footer_content_remember {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    }
 .footer_product {
 display: flex;
 text-align: center;
