@@ -164,6 +164,36 @@ transition: all 0.3s;
     padding-top: 233px;
     padding-bottom: 233px;
 }
+.footer_riddles {
+    display: flex;
+    background-image: linear-gradient(#00000000 0%, #000915), url(mouseimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer_content_riddles {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 288px;
+    justify-content: center;
+}
+.footer_rights{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #000915;
+}
+.footer_rights_save {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+}
 
 @media (max-width: 767px){
     .head {
