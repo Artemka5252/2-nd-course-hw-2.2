@@ -158,6 +158,68 @@ transition: all 0.3s;
 .footer_link:active {
     transform: scale(0.9);
 }
+}
+.footer_gamepad {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 233px;
+    padding-bottom: 233px;
+}
+.footer {
+    display: flex;
+    background-color: #000915;
+}
+.footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 235px;
+}
+.footer_head {
+    padding-top: 282px;
+    padding-bottom: 32px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.footer_product {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.footer_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    color: white;
+    background-color: #9C0332;
+    font-size: 18px;
+    font-family: "montserrat";
+    transition: all 0.3s;
+}
+.footer_link:hover {
+    background-color: #64021f;
+    transform: scale(1.1);
+}
+.footer_link:active {
+    transform: scale(0.9);
+}
+
 .footer_gamepad {
     display: flex;
     flex-wrap: wrap;
@@ -196,6 +258,76 @@ transition: all 0.3s;
 }
 
 @media (max-width: 767px){
+@media (max-width: 767px){
+@media (max-width: 767px){
+.footer {
+    display: flex;
+    background-color: #000915;
+}
+.footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 235px;
+}
+.footer_head {
+    padding-top: 282px;
+    padding-bottom: 32px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.footer_product {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    width: 590px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.footer_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    color: white;
+    background-color: #9C0332;
+    font-size: 18px;
+    font-family: "montserrat";
+    transition: all 0.3s;
+}
+.footer_link:hover {
+    background-color: #64021f;
+    transform: scale(1.1);
+}
+.footer_link:active {
+    transform: scale(0.9);
+}
+.footer_gamepad {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 233px;
+    padding-bottom: 233px;
+}
+
+@media (max-width: 767px){
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .head {
         justify-content: center;
         background-size: cover;
@@ -244,11 +376,18 @@ justify-content: center;
         flex-wrap: wrap;
         justify-content: center;
             }
+    .footer {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: center;
+    }
     .footer_head {
         padding-top: 51px;
         font-size: 32px;
     }
     .footer_content_season {
+    .footer_content {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -265,6 +404,13 @@ padding-right: 16px;
     .footer_product {
 display: flex;
 text-align: center;
+padding-left: 16px;
+padding-right: 16px;
+    }
+    .footer_product {
+display: flex;
+text-align: center;
+width: 343px;
 flex-wrap: wrap;
 font-size: 14px;
 line-height: 22px;
@@ -312,6 +458,10 @@ margin-top: 32px;
     justify-content: center;
 }
 .footer_season {
+.text_content{
+    left: 16px;
+}
+.footer {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -325,6 +475,10 @@ justify-content: center;
     padding-top: 51px;
 }
 .footer_content_season {
+.footer_head {
+    padding-top: 51px;
+}
+.footer_content {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
